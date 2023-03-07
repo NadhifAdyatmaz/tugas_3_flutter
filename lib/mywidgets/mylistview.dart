@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tugas_3_flutter/mywidgets/myimage.dart';
+import 'package:tugas_3_flutter/mywidgets/myline.dart';
 import 'package:tugas_3_flutter/mywidgets/mytitle.dart';
 
 class MyListView extends StatelessWidget {
@@ -35,49 +36,22 @@ class MyListView extends StatelessWidget {
           ],
         ),
         Row(
-          children: [
-            Expanded(
-              child: Container(
-                color: Color.fromARGB(255, 73, 4, 247),
-                padding: EdgeInsets.all(2),
-              ),
-            ),
+          children: const [MyLine()],
+        ),
+        Row(
+          children: const [
+            MyTitle(
+                myText:
+                    "|  G  .  O  .  A  .  T  |             Greatest of All Time            |  G  .  O  .  A  .  T  |"),
           ],
         ),
+        Row(children: const [MyLine()]),
         Row(
           children: [
             Expanded(
               child: Container(
-                color: Color.fromARGB(255, 189, 246, 5),
-                padding: EdgeInsets.all(7),
-                margin: EdgeInsets.all(4),
-                child: const Text(
-                  "|  G  .  O  .  A  .  T  |             Greatest of All Time            |  G  .  O  .  A  .  T  |",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            Expanded(
-              child: Container(
-                color: Color.fromARGB(255, 73, 4, 247),
-                padding: EdgeInsets.all(2),
-              ),
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            Expanded(
-              child: Container(
-                  padding: EdgeInsets.all(5),
-                  color: Color.fromARGB(250, 255, 12, 154),
+                  padding: const EdgeInsets.all(5),
+                  color: const Color.fromARGB(250, 255, 12, 154),
                   height: 300,
                   child: Image.asset(
                     'images/cr7.jpg',
@@ -85,8 +59,8 @@ class MyListView extends StatelessWidget {
             ),
             Expanded(
               child: Container(
-                color: Color.fromARGB(250, 255, 12, 154),
-                padding: EdgeInsets.all(5),
+                color: const Color.fromARGB(250, 255, 12, 154),
+                padding: const EdgeInsets.all(5),
                 height: 300,
                 child: const Text.rich(
                   TextSpan(
@@ -117,8 +91,8 @@ class MyListView extends StatelessWidget {
           children: [
             Expanded(
               child: Container(
-                color: Color.fromARGB(255, 247, 4, 85),
-                padding: EdgeInsets.all(20),
+                color: const Color.fromARGB(255, 247, 4, 85),
+                padding: const EdgeInsets.all(20),
               ),
             ),
           ],
